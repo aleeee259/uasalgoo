@@ -1,0 +1,40 @@
+Mulai
+    Deklarasi:
+        integer jumlah
+        integer i
+        string nama[]
+        real tugas[], uts[], nilaiAkhir[]
+        char grade[]
+
+    Tampilkan judul program
+    Input jumlah mahasiswa
+
+    Untuk i ← 0 sampai jumlah-1 lakukan
+        Input nama[i]
+        Input tugas[i]
+        Input uts[i]
+
+         nilaiakhir[i]=(tugas[i] + uts[i])/2;
+
+        Jika nilaiAkhir[i] ≥ 75 maka
+            grade[i] ← 'A'
+        Jika tidak dan nilaiAkhir[i] ≥ 65 maka
+            grade[i] ← 'B'
+	Jika tidak
+	    grade[i] ← 'E'
+        EndIf
+    EndFor
+
+    Tampilkan header hasil penilaian
+
+    Untuk i ← 0 sampai jumlah-1 lakukan
+        Tampilkan nama[i], nilaiAkhir[i], grade[i]
+
+        Jika grade[i] = 'A' atau 'B' atau 'C' maka
+            Tampilkan "LULUS"
+        Jika tidak
+            Tampilkan "TIDAK LULUS"
+        EndIf
+    EndFor
+
+Selesai
